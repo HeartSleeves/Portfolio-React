@@ -2,6 +2,7 @@ import React from "react";
 import Header from "./components/Header";
 import Deployed from "./components/Deployed";
 import Undeployed from "./components/Undeployed";
+import Footer from "./components/Footer";
 
 const deployments = [
   {
@@ -84,6 +85,7 @@ function App() {
       <Header />
       <Deployed deployments={deployments} />
       <Undeployed undeployed={undeployed} />
+      <Footer />
     </div>
   );
 }

@@ -13,14 +13,6 @@ header {
   box-shadow: 4px 4px 10px 5px #677791;
 }
 header h1 {
-  color: #937ca4;
-  text-shadow: 1px 1px 1px #677791;
-}
-#networklinks {
-  color: #677791;
-  font-size: smaller;
-  margin: 0;
-}
-#networklinks a {
-  color: #677791;
+  color: #583a6d;
+  text-shadow: 1px 1px 2px #a664b1;
 }

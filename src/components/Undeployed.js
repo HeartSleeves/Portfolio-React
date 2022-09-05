@@ -3,7 +3,7 @@ import "../styles/Undeployed.css";
 
 const styles = {
   heading: {
-    color: "#937ca4",
+    color: "#583a6d",
   },
 };
 
