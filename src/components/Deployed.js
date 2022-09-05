@@ -8,32 +8,29 @@ import "../styles/Deployed.css";
 // On a style object, we camelCase all property names, and put all of the values in quotes
 // Non quoted values default to "pixels", e.g. height, margin, padding
 
-const styles = {
-  deployedStyles: {
-    background: "orange",
-  },
-};
-
 // We use JSX curly braces to evaluate the style object on the JSX tag
 
 function Deployed(props) {
   return (
-    <div>
-      {props.projects.map((proj) => (
+    <main>
+      {props.deployments.map((deployments) => (
         <section class="application">
-          <iframe src={proj.deployment} title={proj.title}></iframe>
-          <figcaption class="page-description">{proj.desc}</figcaption>
+          <iframe
+            src={deployments.deployment}
+            title={deployments.title}
+          ></iframe>
+          <figcaption class="page-description">{deployments.desc}</figcaption>
           <div>
-            <a class="pagelink" href={proj.deployment}>
+            <a class="pagelink" href={deployments.deployment}>
               Deployed page
             </a>
-            <a class="repolink" href={proj.repo}>
+            <a class="repolink" href={deployments.repo}>
               Github repo
             </a>
           </div>
         </section>
       ))}
-    </div>
+    </main>
   );
 }
 

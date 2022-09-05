@@ -1,0 +1,9 @@
+.undeployed {
+  border: 5px ridge #dee2ff;
+  margin: 10px 10px 10px 10px;
+  background-color: #dee2ff;
+}
+.undeployed a {
+  color: #937ca4;
+  margin: 0 0 0 10px;
+}

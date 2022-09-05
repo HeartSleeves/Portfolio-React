@@ -1,12 +1,26 @@
-.header {
-  background: #b71775;
-  height: 200px;
+body {
+  background-image: linear-gradient(180deg, #f6f4f8, #feeafa);
+  color: #020d13;
 }
-
-.header h1 {
-  margin: 0;
-  padding-top: 75px;
+header {
+  margin: 50px;
   text-align: center;
-  color: white;
-  font-size: 3rem;
+  background-color: #feeafa;
+  color: #677791;
+  border-radius: 3px;
+  border: 8px ridge #dee2ff;
+  padding: 5px;
+  box-shadow: 4px 4px 10px 5px #677791;
+}
+header h1 {
+  color: #937ca4;
+  text-shadow: 1px 1px 1px #677791;
+}
+#networklinks {
+  color: #677791;
+  font-size: smaller;
+  margin: 0;
+}
+#networklinks a {
+  color: #677791;
 }
