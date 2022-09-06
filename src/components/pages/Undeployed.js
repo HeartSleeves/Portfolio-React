@@ -1,5 +1,5 @@
 import React from "react";
-import "../styles/Undeployed.css";
+import "../../styles/Undeployed.css";
 
 const styles = {
   heading: {

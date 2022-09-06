@@ -1,5 +1,6 @@
 import React from "react";
-import "../styles/Deployed.css";
+import "../../styles/Deployed.css";
+import Undeployed from "./Undeployed";
 
 function Deployed(props) {
   return (
@@ -21,6 +22,7 @@ function Deployed(props) {
           </div>
         </section>
       ))}
+      {Undeployed}
     </main>
   );
 }
