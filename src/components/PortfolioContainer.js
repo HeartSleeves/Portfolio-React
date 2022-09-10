@@ -2,7 +2,6 @@ import React, { useState } from 'react';
 import Header from './Header';
 import Bio from './pages/Bio';
 import Deployed from './pages/Deployed';
-// import Undeployed from './pages/Undeployed';
 import Resume from './pages/Resume';
 import Contact from './pages/Contact';
 
@@ -53,33 +52,33 @@ const deployments = [
   },
 ];
 
-// const undeployed = [
-//   {
-//     title: "Social Network API",
-//     repo: "https://github.com/HeartSleeves/ILW18API",
-//     desc: 'API and endpoints for a social network application using MongoDB and Mongoose. Supports Users to add and remove Friends, post "Thoughts" and "Reactions" to those thoughts.',
-//   },
-//   {
-//     title: "Readme Generator",
-//     repo: "https://github.com/HeartSleeves/ILW9ReadmeGen",
-//     desc: "An early venture into Node JS. Using the Inquirer npm package, generate a professional Readme for any project.",
-//   },
-//   {
-//     title: "Team Profile Generator",
-//     repo: "https://github.com/HeartSleeves/ILW10Team",
-//     desc: "This node js application uses a looping Inquirer menu to build a development team. When complete, a styled webpage is created, displaying the project team members.",
-//   },
-//   {
-//     title: "Employee Tracker",
-//     repo: "https://github.com/HeartSleeves/ILW12EmployeeTracker",
-//     desc: "Early experience with MySql. This Javascript application uses Inquirer menus to collect user information and store it to a Sql database. Supports all CRUD requests for Employees, Roles, and Departments within a company, including a self-reference to employee Managers.",
-//   },
-//   {
-//     title: "E-commerce Back-end",
-//     repo: "https://github.com/HeartSleeves/ILW13Commerce",
-//     desc: "MySql database and API endpoints for hosting an Ecommerce web application. Supports CRUD operations for multiple values and a junction table to add descriptive tags to products",
-//   },
-// ];
+const undeployed = [
+  {
+    title: "Social Network API",
+    repo: "https://github.com/HeartSleeves/ILW18API",
+    desc: 'API and endpoints for a social network application using MongoDB and Mongoose. Supports Users to add and remove Friends, post "Thoughts" and "Reactions" to those thoughts.',
+  },
+  {
+    title: "Readme Generator",
+    repo: "https://github.com/HeartSleeves/ILW9ReadmeGen",
+    desc: "An early venture into Node JS. Using the Inquirer npm package, generate a professional Readme for any project.",
+  },
+  {
+    title: "Team Profile Generator",
+    repo: "https://github.com/HeartSleeves/ILW10Team",
+    desc: "This node js application uses a looping Inquirer menu to build a development team. When complete, a styled webpage is created, displaying the project team members.",
+  },
+  {
+    title: "Employee Tracker",
+    repo: "https://github.com/HeartSleeves/ILW12EmployeeTracker",
+    desc: "Early experience with MySql. This Javascript application uses Inquirer menus to collect user information and store it to a Sql database. Supports all CRUD requests for Employees, Roles, and Departments within a company, including a self-reference to employee Managers.",
+  },
+  {
+    title: "E-commerce Back-end",
+    repo: "https://github.com/HeartSleeves/ILW13Commerce",
+    desc: "MySql database and API endpoints for hosting an Ecommerce web application. Supports CRUD operations for multiple values and a junction table to add descriptive tags to products",
+  },
+];
 
 export default function DeployedContainer() {
   const [currentPage, setCurrentPage] = useState('Portfolio');
@@ -90,7 +89,7 @@ export default function DeployedContainer() {
       return <Bio />;
     }
     if (currentPage === 'Portfolio') {
-      return <Deployed deployments={deployments}/>;
+      return <Deployed deployments={deployments} undeployed={undeployed}/>
     }
     if (currentPage === 'Resume') {
       return <Resume />;
