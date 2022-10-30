@@ -1,9 +1,9 @@
-import React, { useState } from 'react';
-import Header from './Header';
-import Bio from './pages/Bio';
-import Deployed from './pages/Deployed';
-import Resume from './pages/Resume';
-import Contact from './pages/Contact';
+import React, { useState } from "react";
+import Header from "./Header";
+import Bio from "./pages/Bio";
+import Deployed from "./pages/Deployed";
+import Resume from "./pages/Resume";
+import Contact from "./pages/Contact";
 
 const deployments = [
   {
@@ -81,17 +81,17 @@ const undeployed = [
 ];
 
 export default function DeployedContainer() {
-  const [currentPage, setCurrentPage] = useState('Portfolio');
+  const [currentPage, setCurrentPage] = useState("Portfolio");
 
   // This method is checking to see what the value of `currentPage` is. Depending on the value of currentPage, we return the corresponding component to render.
   const renderPage = () => {
-    if (currentPage === 'Bio') {
+    if (currentPage === "Bio") {
       return <Bio />;
     }
-    if (currentPage === 'Portfolio') {
-      return <Deployed deployments={deployments} undeployed={undeployed}/>
+    if (currentPage === "Portfolio") {
+      return <Deployed deployments={deployments} undeployed={undeployed} />;
     }
-    if (currentPage === 'Resume') {
+    if (currentPage === "Resume") {
       return <Resume />;
     }
     return <Contact />;
