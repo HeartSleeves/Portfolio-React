@@ -13,10 +13,10 @@ const deployments = [
     repo: "https://github.com/HeartSleeves/CodeCloset",
   },
   {
-    deployment: "https://echandlerdavis.github.io/Project-1-Group-7/",
+    deployment: "https://echandlerdavis.github.io/Pawsome-Petfinder/",
     title: "Pet adoption shelter search",
     desc: "First collaborative project and use of API fetch requests. The search bar uses the Google Places API to autocomplete, limited to localities. That information is then sent to the Petfinder API to request organizations in the surrounding area. Those organizations are then displayed in order of distance to the selected search area.",
-    repo: "https://github.com/echandlerdavis/Project-1-Group-7",
+    repo: "https://github.com/echandlerdavis/Pawsome-Petfinder",
   },
   {
     deployment: "https://ilw14techblog.herokuapp.com/",
