@@ -6,6 +6,24 @@ import Footer from "./components/Footer";
 
 const deployments = [
   {
+    deployment: "https://code-closet.herokuapp.com/createsnippet",
+    title: "Code Closet",
+    desc: "Collaborative project with https://github.com/adelineagus. A social code sharing site made with React, MongoDB and Mongoose ODM, and GraphQL with a Node.js and Express.js server. Deployed on Heroku and includes JWT authentication.",
+    repo: "https://github.com/HeartSleeves/CodeCloset",
+  },
+  {
+    deployment: "https://echandlerdavis.github.io/Project-1-Group-7/",
+    title: "Pet adoption shelter search",
+    desc: "First collaborative project and use of API fetch requests. The search bar uses the Google Places API to autocomplete, limited to localities. That information is then sent to the Petfinder API to request organizations in the surrounding area. Those organizations are then displayed in order of distance to the selected search area.",
+    repo: "https://github.com/echandlerdavis/Project-1-Group-7",
+  },
+  {
+    deployment: "https://love-ivy.github.io/ILW6Weather/",
+    title: "Weather Dashboard",
+    desc: "This webpage serves as a tool to find current weather forecasts in a chosen city. When the user clicks the search button, the OpenWeather Geocoding API is called. The search field repopulates with the specific city found, and the search is saved and displayed in a list of previous searches. The One Call 1.0 API then returns the current  weather, displayed in the main box, and a five day forecast displayed in cards. The date and units used are localized based on country.",
+    repo: "https://github.com/Love-Ivy/ILW6Weather",
+  },
+  {
     deployment: "https://ilw11notetaker.herokuapp.com/",
     title: "Note Taker",
     desc: "First application deployed to Heroku. Simple note taker with the ability to save and delete notes. Uses Javascript to read and write from a json file to store user notes.",
@@ -36,18 +54,6 @@ const deployments = [
     title: "Daily Schedule",
     desc: "First use of third-party software. This webpage uses moment.js to get the current local time and date. Each hour block will change color to can be saved to local storage.",
     repo: "https://github.com/Love-Ivy/ILW5Schedule",
-  },
-  {
-    deployment: "https://echandlerdavis.github.io/Project-1-Group-7/",
-    title: "Pet adoption shelter search",
-    desc: "First collaborative project and use of API fetch requests. The search bar uses the Google Places API to autocomplete, limited to localities. That information is then sent to the Petfinder API to request organizations in the surrounding area. Those organizations are then displayed in order of distance to the selected search area.",
-    repo: "https://github.com/echandlerdavis/Project-1-Group-7",
-  },
-  {
-    deployment: "https://love-ivy.github.io/ILW6Weather/",
-    title: "Weather Dashboard",
-    desc: "This webpage serves as a tool to find current weather forecasts in a chosen city. When the user clicks the search button, the OpenWeather Geocoding API is called. The search field repopulates with the specific city found, and the search is saved and displayed in a list of previous searches. The One Call 1.0 API then returns the current  weather, displayed in the main box, and a five day forecast displayed in cards. The date and units used are localized based on country.",
-    repo: "https://github.com/Love-Ivy/ILW6Weather",
   },
 ];
 
